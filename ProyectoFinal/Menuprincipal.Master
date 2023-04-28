@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menuprincipal.master.cs" Inherits="ProyectoFinal.Menuprincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/Menucss1.css" rel="stylesheet" />
+    <link href="css/Botonescss.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <div class="navbar">
+                    <a href="HOME.ASPX">Inicio</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Catalogo 
+      <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="School.aspx">Escuela</a>
+                            <a href="Clase.aspx">Clases</a>
+                            <a href="Cursos.aspx">Cursos</a>
+                            <a href="Estudiantes.aspx">Estudiantes</a>
+                            <a href="Grade.aspx">Clalificacion</a>
+                            <a href="Maestros.aspx">Maestros</a>                                 
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
